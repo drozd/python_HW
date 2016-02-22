@@ -21,5 +21,5 @@ with open('texts.txt', 'w') as f:
         sentences = []
         for s in root.iterfind('.//se'):
         	words = []
-        	if len(s) in range(3,4):
+        	if len(s) in range(4,7):
 				f.write((' '.join([word[-1].tail.encode('utf-8').replace('`', '') for word in s.iterfind('.//w')]) + '\n'))
